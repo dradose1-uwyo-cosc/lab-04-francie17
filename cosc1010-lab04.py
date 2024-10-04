@@ -1,6 +1,8 @@
 # Your Name Here
+# Francie Scott
 # UWYO COSC 1010
 # Submission Date
+# 10/3/24
 # Lab 03 
 # Lab Section: 
 # Sources, people worked with, help given to: 
@@ -52,7 +54,6 @@ max_temps = [
     35, 32, 41, 48, 44
 ]
 
-
 min_temps = [
     23, 14, 7, 11, 13, 22, 15, 21, 23, 31,
     19, 12, 18, 30, 23, 20, 15, 2, 7, -2,
@@ -93,6 +94,15 @@ min_temps = [
     -1, -1, 11, 13
 ]
 
+
+
+max_total = 0
+min_total = 0
+for i in range(len(max_temps)):
+    max_total = max_total+max_temps[i]
+    min_total = min_total+min_temps[i]
+print(max_total/len(max_temps))
+print(min_total/len(min_temps))
 # The above two lists are datasets for the maximum and minimum temperatures for Laramie in 2023.
 # Each of these lists has the same length, indicating that they both have the same index positions.
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
